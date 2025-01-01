@@ -1,6 +1,5 @@
 import React, { Suspense } from 'react';
-import '@aws-amplify/ui-react/styles.css';
-import NavbarComponent from './NavBar/NavBarComponent';
+import NavbarComponent from './components/NavBar/NavBarComponent';
 import './App.css'; // Import your CSS file
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import { Route, Routes } from 'react-router-dom';
