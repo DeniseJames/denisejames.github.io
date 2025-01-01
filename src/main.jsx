@@ -1,25 +1,15 @@
-import React, { Suspense } from 'react';
-import NavbarComponent from './components/NavBar/NavBarComponent';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+import App from './App'; // Make sure App is properly exported
 import './App.css'; // Import your CSS file
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
-import { Route, Routes } from 'react-router-dom';
 
-// Lazy load the components
-const HomeComponent = React.lazy(() => import('./components/Home/HomeComponent'));
-
-function App() {
-  return (
-    <>
-      <NavbarComponent />
-      <div className="container-fluid"> {/* Use Bootstrap container */}
-        <Suspense fallback={<div>Loading...</div>}>
-          <Routes>
-            <Route path="/" element={<HomeComponent />} />
-          </Routes>
-        </Suspense>
-      </div>
-    </>
-  );
-}
-
-export default App;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
+);
