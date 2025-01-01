@@ -1,10 +1,26 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import React, { Suspense } from 'react';
+import '@aws-amplify/ui-react/styles.css';
+import NavbarComponent from './NavBar/NavBarComponent';
+import './App.css'; // Import your CSS file
+import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import { Route, Routes } from 'react-router-dom';
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+// Lazy load the components
+const HomeComponent = React.lazy(() => import('./components/Home/HomeComponent'));
+
+function App() {
+  return (
+    <>
+      <NavbarComponent />
+      <div className="container-fluid"> {/* Use Bootstrap container */}
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            <Route path="/" element={<HomeComponent />} />
+          </Routes>
+        </Suspense>
+      </div>
+    </>
+  );
+}
+
+export default App;
