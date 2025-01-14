@@ -5,8 +5,7 @@ import styles from './NavBarComponent.module.css';
 
 const NavbarComponent: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
-  const navigate = useNavigate();
-  
+  const navigate = useNavigate(); 
 
 
   const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -25,7 +24,8 @@ const NavbarComponent: React.FC = () => {
       <Navbar expand="lg" className={styles.navbar}>
         <Navbar.Brand style={{ marginLeft: '2rem', marginRight: '10rem' }}>
           <div style={{ display: 'flex', alignItems: 'flex-start', marginLeft: '1rem', color: 'gold', fontFamily: 'Georgia', fontSize: '1.5vw' }}>
-            Quantum Computer Learning
+            Denise James  
+             MSEE, BSEE
           </div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
