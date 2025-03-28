@@ -1,52 +1,96 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import styles from './HomeComponent.module.css';
+import React from "react";
 
-const HomeComponent = () => {
+export default function HomePage() {
   return (
-    <main className={styles.home}>
-      <header className={styles.header}>
-        <h1>Denise James</h1>
-        <p>Your one-stop solution for comprehensive machine learning, web design, and training services.</p>
-      </header>
-      <section className={styles.testimonials}>
-        <h2 className="mb-4">What Her Colleagues Say About Us on Linkedin</h2>
-        <div className={styles.testimonialList}>
-          <blockquote className={styles.testimonial}>
-            <p className="fst-italic mb-3">
-              "Denise James worked in my department at Honda R&D, providing software integration and data management services to engine, emission control, and electrical departments during 2013 and 2014. Denise is highly capable and knowledgeable about system integration and vehicle control software, and she provided extraordinary support across departments to a diverse group of engineers. She chaired weekly meetings with sub-system engineers to keep software development on schedule and to ensure accurate data for software release. Furthermore, she regularly found areas for process improvement and suggested effective countermeasures for improving data accuracy and work efficiency. I would not hesitate to work with Denise again, and I can unequivocally recommend her based on quality of work and tenacity towards goals."
-            </p>
-            <footer className="fw-bold">
-              - Richard Owens, Manager at Honda Research and Development
-            </footer>
-          </blockquote>
-          <blockquote className={styles.testimonial}>
-            <p className="fst-italic">
-              "Denise James was my colleague at Honda Research and Development. We worked together constantly at work on vehicle software integration. Denise is one out of five people in the country that can do the vehicle software integration she does. Denise was tenacious and extremely knowledgeable about system vehicle software. She chaired an efficient weekly meeting with sub system engineers to release accurate software quickly. She kept the team on task with electronic vehicle software schedules on a shared secure location. I will never forget the time another team member was unavailable for an issue with the software in a vehicle launch. Denise stepped up to communicate the concern with the supplier in Japan to release updated software within twelve hours to keep the vehicle launch on time. I highly recommend Denise and would enjoy working with her again."
-            </p>
-            <footer className="fw-bold">
-              - Timothy Dixon, Senior Systems Engineer at Honda Research and Development
-            </footer>
-          </blockquote>
-        </div>
-      </section>
-      <footer className={styles.footer}>
-        <p>
-          Contact us today to learn more about how we can help your business
-          grow. <Link to="/contact">Contact Us</Link> to learn more about the
-          above services offered.
-        </p>
-      </footer>
-      <a
-        href="https://www.linkedin.com/in/deniserjames/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="ms-2"
-      >
-        <i className="fab fa-linkedin"></i>
-      </a>
-    </main>
-  );
-};
+    <div className="min-h-screen bg-gray-50 text-gray-800 p-6 font-sans">
+      <div className="max-w-4xl mx-auto">
+        <header className="text-center mb-10">
+          <h1 className="text-4xl font-bold text-indigo-600">Denise James</h1>
+          <p className="text-xl mt-2">STEM Educator | Data Scientist | Engineer</p>
+        </header>
 
-export default HomeComponent;
+        <section className="mb-10">
+          <h2 className="text-2xl font-semibold text-indigo-500 mb-4">Welcome!</h2>
+          <p>
+            I'm <strong>Denise R. James</strong> — a passionate STEM educator and experienced data science leader.
+            With over a decade of hands-on experience in engineering, teaching, and machine learning, I’m committed
+            to inspiring students, mentoring future technologists, and solving real-world problems with innovative
+            data solutions.
+          </p>
+        </section>
+
+        <section className="mb-10">
+          <h2 className="text-2xl font-semibold text-indigo-500 mb-4">About Me</h2>
+          <ul className="list-disc pl-6 space-y-1">
+            <li>📍 Based in Chicago, IL</li>
+            <li>🎓 MS in Electronics & Computer Control Systems, BS in Electrical Engineering</li>
+            <li>💻 Skilled in Python, C++, SQL, AWS, Power BI, and machine learning frameworks</li>
+            <li>👩🏽‍🏫 Former STEM teacher at DuPage High Schools and adjunct instructor at Aurora University</li>
+            <li>🚗 Automotive systems engineering background with Honda, Caterpillar, and Fiat</li>
+            <li>🌱 Dedicated mentor and STEM advocate for students of all ages</li>
+          </ul>
+        </section>
+
+        <section className="mb-10">
+          <h2 className="text-2xl font-semibold text-indigo-500 mb-4">What I Do</h2>
+          <ul className="list-disc pl-6 space-y-1">
+            <li>STEM Instruction – Teaching programming, robotics, and engineering fundamentals to young minds</li>
+            <li>Freelance Consulting – Delivering full-stack applications using AWS and modern frameworks</li>
+            <li>Data Science – From embedded systems to predictive modeling, I build and analyze solutions that matter</li>
+            <li>Mentoring – Supporting learners in self-driving car tech and machine learning (Udacity mentor)</li>
+          </ul>
+        </section>
+
+        <section className="mb-10">
+          <h2 className="text-2xl font-semibold text-indigo-500 mb-4">Skills Snapshot</h2>
+          <div className="grid grid-cols-2 gap-4">
+            <ul className="list-disc pl-6">
+              <li>Programming: Python, C++, SQL, noSQL, C#, Java</li>
+              <li>Cloud & Tools: AWS, Azure, Git, Jira</li>
+            </ul>
+            <ul className="list-disc pl-6">
+              <li>Visualization: Power BI, Matplotlib</li>
+              <li>Frameworks: TensorFlow, PyTorch, Scikit-learn</li>
+              <li>Teaching: Curriculum design, college and K–12 instruction</li>
+            </ul>
+          </div>
+        </section>
+
+        <section className="mb-10">
+          <h2 className="text-2xl font-semibold text-indigo-500 mb-4">Projects</h2>
+          <ul className="list-disc pl-6">
+            <li>
+              <a href="http://www.denisejames.dev" className="text-blue-600 hover:underline" target="_blank">denisejames.dev</a>
+            </li>
+            <li>
+              <a href="http://www.goop.dev" className="text-blue-600 hover:underline" target="_blank">goop.dev</a>
+            </li>
+          </ul>
+        </section>
+
+        <section className="mb-10">
+          <h2 className="text-2xl font-semibold text-indigo-500 mb-4">Testimonials</h2>
+          <blockquote className="border-l-4 border-indigo-300 pl-4 italic mb-4">
+            “Denise is one of the top software integrators in the country… She kept our launch on track and solved issues globally.”
+            <br />
+            — <strong>Timothy Dixon, Honda R&D Americas</strong>
+          </blockquote>
+          <blockquote className="border-l-4 border-indigo-300 pl-4 italic">
+            “She provided extraordinary support and consistently improved our processes.”
+            <br />
+            — <strong>Richard Owens, Honda R&D</strong>
+          </blockquote>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold text-indigo-500 mb-4">Contact</h2>
+          <ul className="list-none space-y-1">
+            <li>📧 <a href="mailto:denisetoo@gmail.com" className="text-blue-600 hover:underline">denisetoo@gmail.com</a></li>
+            <li>🌍 Chicago, IL</li>
+            <li>📱 510-248-9518</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  );
+}
