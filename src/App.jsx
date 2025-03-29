@@ -7,6 +7,7 @@ import { Route, Routes } from 'react-router-dom';
 
 // Lazy load the components
 const HomeComponent = React.lazy(() => import('./components/Home/HomeComponent'));
+const ResumeComponent = React.lazy(() =>  import('./components/Resume/ResumeComponent'));
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
             <Route path="/" element={<HomeComponent />} />
+            <Route path="/resume" element={<ResumeComponent />} />
           </Routes>
         </Suspense>
       </div>

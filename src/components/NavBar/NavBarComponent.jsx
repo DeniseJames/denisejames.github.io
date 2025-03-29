@@ -40,23 +40,17 @@ const NavbarComponent = () => {
               className="text-white mx-2 fs-6"
               onClick={() => navigate('/')}
             >
-              Expertise
+              Home
             </Nav.Link>
             <Nav.Link
               className="text-white mx-2 fs-6"
-              onClick={() => navigate('/machine-learning')}
+              onClick={() => navigate('/resume')}
             >
-              Education
+              Resume
             </Nav.Link>
             <Nav.Link
               className="text-white mx-2 fs-6"
               onClick={() => navigate('/web-design')}
-            >
-              References
-            </Nav.Link>
-            <Nav.Link
-              className="text-white mx-2 fs-6"
-              onClick={() => navigate('/training')}
             >
               Training
             </Nav.Link>
