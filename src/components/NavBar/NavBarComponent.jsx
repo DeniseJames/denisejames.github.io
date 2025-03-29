@@ -31,8 +31,7 @@ const NavbarComponent = () => {
               fontSize: '1.5vw',
             }}
           >
-            Denise James, BSEE, MSEE
-          </div>
+         </div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -68,19 +67,6 @@ const NavbarComponent = () => {
               Contact Me
             </Nav.Link>
           </Nav>
-          <Form className="d-flex" onSubmit={handleSearchSubmit}>
-            <FormControl
-              type="search"
-              placeholder="Search"
-              className="me-2 fs-6"
-              aria-label="Search"
-              value={searchQuery}
-              onChange={handleSearchChange}
-            />
-            <Button variant="outline-light" type="submit" className="fs-6">
-              Search
-            </Button>
-          </Form>
         </Navbar.Collapse>
       </Navbar>
     </div>

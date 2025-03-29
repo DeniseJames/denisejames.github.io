@@ -1,18 +1,51 @@
+/* Bootstrap-aligned custom styles */
+
 .home {
-    padding: 2rem;
+  padding: 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.homeCard {
+  background-color: #fdfdfd;
+  border-radius: 1rem;
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+}
+
+.quote {
+  background-color: #eef6ff;
+  padding: 1rem;
+  border-left: 4px solid #0056b3;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+/* Optional overrides if you still want to use grid-based layout somewhere manually */
+.gridSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2.5rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .gridSection {
+    grid-template-columns: 1fr 1fr;
   }
-  
-  .header {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  
-  .section {
-    margin-bottom: 2rem;
-  }
-  
-  .footer {
-    text-align: center;
-    margin-top: 2rem;
-  }
-  
+}

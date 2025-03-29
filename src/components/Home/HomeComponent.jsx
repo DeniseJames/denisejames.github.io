@@ -1,96 +1,97 @@
 import React from "react";
+import teachingImage from '../../images/WhiteWomenTeaching.png';
 
-export default function HomePage() {
+
+export default function HomeComponent() {
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-800 p-6 font-sans">
-      <div className="max-w-4xl mx-auto">
-        <header className="text-center mb-10">
-          <h1 className="text-4xl font-bold text-indigo-600">Denise James</h1>
-          <p className="text-xl mt-2">STEM Educator | Data Scientist | Engineer</p>
-        </header>
+    <div className="min-vh-100 bg-white text-black font-sans">
+      {/* Header */}
+      <header className="container py-4 border-bottom">
+        <div className="text-center">
+          <h2 className="h4 fw-semibold">
+            Denise James, BSEE, MSEE, College and High School STEM and AI Teacher
+          </h2>
+        </div>
+      </header>
 
-        <section className="mb-10">
-          <h2 className="text-2xl font-semibold text-indigo-500 mb-4">Welcome!</h2>
-          <p>
-            I'm <strong>Denise R. James</strong> — a passionate STEM educator and experienced data science leader.
-            With over a decade of hands-on experience in engineering, teaching, and machine learning, I’m committed
-            to inspiring students, mentoring future technologists, and solving real-world problems with innovative
-            data solutions.
-          </p>
-        </section>
-
-        <section className="mb-10">
-          <h2 className="text-2xl font-semibold text-indigo-500 mb-4">About Me</h2>
-          <ul className="list-disc pl-6 space-y-1">
-            <li>📍 Based in Chicago, IL</li>
-            <li>🎓 MS in Electronics & Computer Control Systems, BS in Electrical Engineering</li>
-            <li>💻 Skilled in Python, C++, SQL, AWS, Power BI, and machine learning frameworks</li>
-            <li>👩🏽‍🏫 Former STEM teacher at DuPage High Schools and adjunct instructor at Aurora University</li>
-            <li>🚗 Automotive systems engineering background with Honda, Caterpillar, and Fiat</li>
-            <li>🌱 Dedicated mentor and STEM advocate for students of all ages</li>
-          </ul>
-        </section>
-
-        <section className="mb-10">
-          <h2 className="text-2xl font-semibold text-indigo-500 mb-4">What I Do</h2>
-          <ul className="list-disc pl-6 space-y-1">
-            <li>STEM Instruction – Teaching programming, robotics, and engineering fundamentals to young minds</li>
-            <li>Freelance Consulting – Delivering full-stack applications using AWS and modern frameworks</li>
-            <li>Data Science – From embedded systems to predictive modeling, I build and analyze solutions that matter</li>
-            <li>Mentoring – Supporting learners in self-driving car tech and machine learning (Udacity mentor)</li>
-          </ul>
-        </section>
-
-        <section className="mb-10">
-          <h2 className="text-2xl font-semibold text-indigo-500 mb-4">Skills Snapshot</h2>
-          <div className="grid grid-cols-2 gap-4">
-            <ul className="list-disc pl-6">
-              <li>Programming: Python, C++, SQL, noSQL, C#, Java</li>
-              <li>Cloud & Tools: AWS, Azure, Git, Jira</li>
-            </ul>
-            <ul className="list-disc pl-6">
-              <li>Visualization: Power BI, Matplotlib</li>
-              <li>Frameworks: TensorFlow, PyTorch, Scikit-learn</li>
-              <li>Teaching: Curriculum design, college and K–12 instruction</li>
-            </ul>
+      {/* Main */}
+      <section className="container py-5">
+        <div className="row align-items-center">
+          {/* Left Column */}
+          <div className="col-md-4 mb-4 mb-md-0">
+            <h1 className="display-5 fw-bold">Teaching the Future of AI</h1>
+            <p className="text-muted mt-3">
+              Unlock unparalleled insights with our consulting services, where innovation
+              meets expertise to redefine business success. Embrace the future of consultancy,
+              driven by fresh strategies and cutting-edge solutions tailored uniquely for you.
+            </p>
+            <button className="btn btn-dark mt-3">LEARN MORE</button>
           </div>
-        </section>
 
-        <section className="mb-10">
-          <h2 className="text-2xl font-semibold text-indigo-500 mb-4">Projects</h2>
-          <ul className="list-disc pl-6">
-            <li>
-              <a href="http://www.denisejames.dev" className="text-blue-600 hover:underline" target="_blank">denisejames.dev</a>
-            </li>
-            <li>
-              <a href="http://www.goop.dev" className="text-blue-600 hover:underline" target="_blank">goop.dev</a>
-            </li>
-          </ul>
-        </section>
+          {/* Right Column */}
+          <div className="col-md-8 text-center">
+          <img
+  src={teachingImage}
+  alt="Teacher and students"
+  className="img-fluid rounded shadow"
+/>
 
-        <section className="mb-10">
-          <h2 className="text-2xl font-semibold text-indigo-500 mb-4">Testimonials</h2>
-          <blockquote className="border-l-4 border-indigo-300 pl-4 italic mb-4">
-            “Denise is one of the top software integrators in the country… She kept our launch on track and solved issues globally.”
-            <br />
-            — <strong>Timothy Dixon, Honda R&D Americas</strong>
-          </blockquote>
-          <blockquote className="border-l-4 border-indigo-300 pl-4 italic">
-            “She provided extraordinary support and consistently improved our processes.”
-            <br />
-            — <strong>Richard Owens, Honda R&D</strong>
-          </blockquote>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section>
-          <h2 className="text-2xl font-semibold text-indigo-500 mb-4">Contact</h2>
-          <ul className="list-none space-y-1">
-            <li>📧 <a href="mailto:denisetoo@gmail.com" className="text-blue-600 hover:underline">denisetoo@gmail.com</a></li>
-            <li>🌍 Chicago, IL</li>
-            <li>📱 510-248-9518</li>
-          </ul>
-        </section>
-      </div>
+      {/* Services Section */}
+      <section className="bg-light py-5">
+        <div className="container">
+          <h2 className="h3 fw-semibold mb-5">Our Services</h2>
+          <div className="row g-4">
+            <div className="col-md-4">
+              <div className="p-4 bg-white rounded shadow-sm h-100">
+                <h3 className="h5 fw-bold mb-3">Insight Catalyst</h3>
+                <p className="text-muted">
+                  Unleash powerful data-driven insights to transform your strategies and propel your
+                  business into the future. Stay ahead of the curve with cutting-edge analysis and
+                  thought-provoking discussions tailored for visionary leaders.
+                </p>
+                <a href="#learn" className="text-primary text-decoration-underline small">Learn more</a>
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="p-4 bg-white rounded shadow-sm h-100">
+                <h3 className="h5 fw-bold mb-3">Synergy Grow</h3>
+                <p className="text-muted">
+                  Unveil groundbreaking solutions and transform business landscapes by exploring
+                  real-world success stories. Our case studies provide the blueprint for innovative
+                  strategies that redefine industry standards and propel you ahead of the curve.
+                </p>
+                <a href="#learn" className="text-primary text-decoration-underline small">Learn more</a>
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="p-4 bg-white rounded shadow-sm h-100">
+                <h3 className="h5 fw-bold mb-3">Insight Catalyst</h3>
+                <p className="text-muted">
+                  Our team channels a blend of diverse expertise and groundbreaking strategies to
+                  propel your organization into the future. We're committed to redefining success
+                  through collaboration and innovation.
+                </p>
+                <a href="#learn" className="text-primary text-decoration-underline small">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="container py-4 border-top small d-flex justify-content-between align-items-center">
+        <div>Your Site Title</div>
+        <div className="d-flex gap-3">
+          <a href="#location" className="text-decoration-none">Location</a>
+          <a href="#contact" className="text-decoration-none">Contact</a>
+        </div>
+      </footer>
     </div>
   );
 }
