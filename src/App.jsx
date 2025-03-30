@@ -8,6 +8,7 @@ import { Route, Routes } from 'react-router-dom';
 // Lazy load the components
 const HomeComponent = React.lazy(() => import('./components/Home/HomeComponent'));
 const ResumeComponent = React.lazy(() =>  import('./components/Resume/ResumeComponent'));
+const ContactComponent = React.lazy(() =>  import('./components/Contact/ContactComponent'));
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomeComponent />} />
             <Route path="/resume" element={<ResumeComponent />} />
+            <Route path="/contact" element={<ContactComponent />} />
           </Routes>
         </Suspense>
       </div>
