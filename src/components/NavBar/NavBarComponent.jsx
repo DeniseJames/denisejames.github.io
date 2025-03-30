@@ -50,13 +50,25 @@ const NavbarComponent = () => {
             </Nav.Link>
             <Nav.Link
               className="text-white mx-2 fs-6"
-              onClick={() => navigate('/web-design')}
+              onClick={() => navigate('/computer')}
             >
-              Training
+              Computer Science
             </Nav.Link>
             <Nav.Link
               className="text-white mx-2 fs-6"
-              onClick={() => navigate('/contact')}
+              onClick={() => navigate('/ai')}
+            >
+              Artificial Intelligence
+            </Nav.Link>
+            <Nav.Link
+              className="text-white mx-2 fs-6"
+              onClick={() => navigate('/python')}
+            >
+              Python Programming
+            </Nav.Link>
+            <Nav.Link
+              className="text-white mx-2 fs-6"
+              onClick={() => navigate('/python')}
             >
               Contact Me
             </Nav.Link>

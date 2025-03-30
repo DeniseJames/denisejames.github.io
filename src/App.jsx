@@ -9,6 +9,9 @@ import { Route, Routes } from 'react-router-dom';
 const HomeComponent = React.lazy(() => import('./components/Home/HomeComponent'));
 const ResumeComponent = React.lazy(() =>  import('./components/Resume/ResumeComponent'));
 const ContactComponent = React.lazy(() =>  import('./components/Contact/ContactComponent'));
+const PythonComponent = React.lazy(() =>  import('./components/Python/PythonComponent'));
+const ComputerComponent = React.lazy(() =>  import('./components/ComputerScience/ComputerScienceComponent'));
+const AIComponent = React.lazy(() =>  import('./components/ArtificialIntelligence/ArtificialIntelligenceComponent'));
 
 function App() {
   return (
@@ -20,6 +23,9 @@ function App() {
             <Route path="/" element={<HomeComponent />} />
             <Route path="/resume" element={<ResumeComponent />} />
             <Route path="/contact" element={<ContactComponent />} />
+            <Route path="/ai" element={<AIComponent />} />
+            <Route path="/computer" element={<ComputerComponent />} />
+            <Route path="/python" element={<PythonComponent />} />
           </Routes>
         </Suspense>
       </div>
