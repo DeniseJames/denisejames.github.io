@@ -5,13 +5,11 @@ import meImage from '../../images/DeniseCalif.jpg'; // adjust path if needed
 export default function ResumeComponent() {
   return (
     <div className={styles.resumeContainer}>
-      <img src={meImage} alt="My portrait" className="profile-img mb-4" />
-      <h1>Your Name</h1>
+      <img src={meImage} alt="My portrait" className={`${styles.profileImg} mb-4`} />
+
+      <h1>Denise James</h1>
       <p className="lead">STEM Educator | Product Design | AI Evangelist</p>
       {/* rest of your resume content */}
-      <h1 className={styles.heading}>Denise R. James</h1>
-      <p className={styles.contact}>Chicago, IL  <a href="mailto:denisetoo@gmail.com">denisetoo@gmail.com</a></p>
-
       <section className={styles.section + ' ' + styles.leftAligned}>
         <h2>Summary</h2>
         <p>

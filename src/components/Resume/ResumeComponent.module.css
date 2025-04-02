@@ -56,12 +56,30 @@
   .leftAligned {
     text-align: left;
   }
-  .profile-img {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 50%; /* makes it a circle */
-    border: 4px solid #ddd;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
+/* ResumeComponent.module.css */
+.profileImg {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ddd;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: block;
+  margin: 0 auto;
+}
+.section h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.section h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
       
