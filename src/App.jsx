@@ -3,7 +3,7 @@ import '@aws-amplify/ui-react/styles.css';
 import NavbarComponent from './components/NavBar/NavBarComponent';
 import './App.css'; // Import your CSS file
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
-import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 // Lazy load the components
 const HomeComponent = React.lazy(() => import('./components/Home/HomeComponent'));
@@ -16,16 +16,17 @@ const AIComponent = React.lazy(() =>  import('./components/ArtificialIntelligenc
 function App() {
   return (
     <>
-      <NavbarComponent />
-      <div className="container-fluid"> {/* Use Bootstrap container */}
+<NavbarComponent />
+      <div className="container-fluid">
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
             <Route path="/" element={<HomeComponent />} />
             <Route path="/resume" element={<ResumeComponent />} />
+            <Route path="/python" element={<PythonComponent />} />
+            <Route path="/computer" element={<ComputerComponent />} />
+            <Route path="/training" element={<AIComponent />} />
             <Route path="/contact" element={<ContactComponent />} />
             <Route path="/ai" element={<AIComponent />} />
-            <Route path="/computer" element={<ComputerComponent />} />
-            <Route path="/python" element={<PythonComponent />} />
           </Routes>
         </Suspense>
       </div>

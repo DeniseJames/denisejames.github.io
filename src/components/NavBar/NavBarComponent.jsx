@@ -68,7 +68,7 @@ const NavbarComponent = () => {
             </Nav.Link>
             <Nav.Link
               className="text-white mx-2 fs-6"
-              onClick={() => navigate('/python')}
+              onClick={() => navigate('/contact')}
             >
               Contact Me
             </Nav.Link>
