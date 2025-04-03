@@ -1,6 +1,6 @@
 import React from "react";
 import teachingImage from '../../images/WhiteWomenTeaching.png';
-
+import { Link } from 'react-router-dom';
 
 export default function HomeComponent() {
   return (
@@ -33,7 +33,6 @@ export default function HomeComponent() {
              we prepare learners to use technology and shape its future. 
              Invest in an education that empowers students to thrive in tomorrow’s careers.
             </p>
-            <button className="btn btn-dark mt-3">LEARN MORE</button>
           </div>
 
           {/* Right Column */}
@@ -65,7 +64,7 @@ export default function HomeComponent() {
                  AP Computer Science opens doors to college, careers, and beyond. 
                  Let your school lead the way in shaping tomorrow’s tech leaders.
                 </p>
-                <a href="#learn" className="text-primary text-decoration-underline small">Learn more</a>
+                <Link to="/python" className="text-primary text-decoration-underline small">Learn more</Link>
               </div>
             </div>
 
@@ -80,7 +79,7 @@ export default function HomeComponent() {
                   — preparing students to use AI and create it. Give your learners a head start in one of the
                    fastest-growing fields of the 21st century.
                 </p>
-                <a href="#learn" className="text-primary text-decoration-underline small">Learn more</a>
+                <Link to="/ai" className="text-primary text-decoration-underline small">Learn More</Link>
               </div>
             </div>
 
@@ -94,7 +93,7 @@ export default function HomeComponent() {
                  to building innovative solutions. It's not just about learning Python — it's about learning
                   how to think.
                 </p>
-                <a href="#learn" className="text-primary text-decoration-underline small">Learn more</a>
+                  <Link to="/python" className="text-primary text-decoration-underline small">Learn more</Link>
               </div>
             </div>
           </div>
@@ -105,9 +104,9 @@ export default function HomeComponent() {
       <footer className="container py-4 border-top small d-flex justify-content-between">
         <div>Denise James, BSEE, MSEE, STEM and AI Teacher</div>
         <div className="d-flex gap-3">
-          <a href="#location" className="text-decoration-none">Location</a>
-          <a href="#contact" className="text-decoration-none">Contact</a>
-        </div>
+   <Link to="/contact" className="text-decoration-none">Contact</Link>
+</div>
+
       </footer>
     </div>
   );
